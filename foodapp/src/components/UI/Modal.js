@@ -2,7 +2,7 @@ import { Fragment } from "react";
 import ReactDOM from "react-dom";
 import classes from "./Modal.module.css";
 
-const portalElement = document.getElementById("overlays");
+
 
 const ModalOverlay = (props) => {
   return (
@@ -13,7 +13,7 @@ const ModalOverlay = (props) => {
     </div>
   );
 };
-
+const portalElement = document.getElementById("overlays");
 const Modal = (props) => {
   return (
     <Fragment>
