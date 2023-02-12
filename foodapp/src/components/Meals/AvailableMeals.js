@@ -11,7 +11,7 @@ const OUR_FOODS = [
         image: afang2,
         description: '1L bowl, Afang soup with goat meat. Includes mfi, pomo, stockfish and dry fish',
         price: 6500,
-        minimumOrder: '3',
+        // minimumOrder: 'Minimum order: 3',
     },
     {
         id: 'meal2',
@@ -37,7 +37,7 @@ const OUR_FOODS = [
         name: 'Afang soup',
         description: '1L bowl, Afang soup with beef. Includes mfi, pomo, stockfish and dry fish',
         price: 6000,
-        minimumOrder: '3',
+        // minimumOrder: 'Minimum order: 3',
     },
     {
         id: 'meal6',
@@ -63,14 +63,14 @@ const OUR_FOODS = [
         name: 'Edikang Ikong soup',
         description: '1L bowl, Edikang Ikong soup with goat meat. Includes mfi, pomo, stockfish and dry fish',
         price: 6500,
-        minimumOrder: '3',
+        // minimumOrder: 'Minimum order: 3',
     },
     {
         id: 'meal10',
         name: 'Ekpang Nkukwo',
         description: '1.4L bowl, Ekpang Nkukwo. Grated cocoyam cooked with palm oil, mfi, dry fish, smoked fish and pomo',
         price: 10000,
-        minimumOrder: '2',
+       
     },
     {
         id: 'meal11',
@@ -95,7 +95,7 @@ const OUR_FOODS = [
         name: 'Isiewu',
         description: '1L bowl, Isiewu. Bite-sized goat head, slowly cooked, in palmoil, fresh pepper, onions, ugba and pomo',
         price: 6500,
-        minimumOrder: '2',
+        
     }
     
 ]
