@@ -25,6 +25,7 @@ const Cart = (props) => {
     cartCtx.clearall();
     setShowOrder(true);
   };
+  // const item = { totalAmount: totalAmount };
 
   const cartItems = (
     <ul className={classes["cart-items"]}>
@@ -34,6 +35,7 @@ const Cart = (props) => {
           name={item.name}
           amount={item.amount}
           price={item.price}
+          totalAmount={item.totalAmount}
           onRemove={cartItemRemoveHandler.bind(null, item.id)}
           onAdd={cartItemAddHandler.bind(null, item)}
         />
@@ -45,11 +47,11 @@ const Cart = (props) => {
     <Modal onClose={props.onClose}>
       {!showOrder ? (
         <>
-          {cartItems}
+          {cartItems }
 
           <div className={classes.total}>
             <span>Total Amount</span>
-            <span>{totalAmount}</span>
+            <span>₦{totalAmount}</span>
           </div>
           <div className={classes.actions}>
             <button className={classes["button--alt"]} onClick={props.onClose}>
@@ -70,4 +72,3 @@ const Cart = (props) => {
 };
 
 export default Cart;
-
