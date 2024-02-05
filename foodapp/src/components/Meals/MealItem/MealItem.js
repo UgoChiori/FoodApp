@@ -2,7 +2,7 @@ import classes from "./MealItem.module.css";
 import MealItemForm from "./MealItemForm";
 import { useContext } from "react";
 import CartContext from "../../../storage/CartContext";
-// import afang2 from "../../../assets/afang2.avif";
+
 
 const MealItem = (props) => {
   const cartCtx = useContext(CartContext);
@@ -12,7 +12,7 @@ const MealItem = (props) => {
   const addToCartHandler = (amount) => {
     cartCtx.addItem({
       id: props.id,
-      image: props.image,
+      // image: props.image,
       name: props.name,
       amount: amount,
       price: props.price,

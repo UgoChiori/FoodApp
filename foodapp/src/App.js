@@ -15,11 +15,12 @@ function App() {
   };
   return (
     <CartProvider>
-      {cartIsShown && <Cart onClose={hideCartHandler} />}
-      <Header onShowCart={showCartHandler} onClose={hideCartHandler} />
+      {" "}
+      {cartIsShown && <Cart onClose={hideCartHandler} />}{" "}
+      <Header onShowCart={showCartHandler} onClose={hideCartHandler} />{" "}
       <main>
         <Menu />
-      </main>
+      </main>{" "}
     </CartProvider>
   );
 }
